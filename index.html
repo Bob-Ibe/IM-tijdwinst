@@ -146,7 +146,7 @@ function update() {
   if (document.activeElement !== $('i-rate')) $('i-rate').value = s.rate;
   $('i-rate').style.width = Math.max(2, String($('i-rate').value).length) + 'ch';
   $('r-week').textContent = r.perWeek + ' uur per week'; $('r-month').textContent = eur(r.valMonth); $('r-year').textContent = eur(r.valYear);
-  const ww = Math.round(r.workweeks); $('r-n').textContent = ww.toLocaleString('nl-NL'); $('r-u').textContent = `${ww === 1 ? 'werkweek' : 'werkweken'} van 40 uur`;
+  const hy = Math.round(r.perYear), txt = hy.toLocaleString('nl-NL'); $('r-n').textContent = txt; $('r-n').style.fontSize = txt.length > 4 ? 'clamp(64px,11vw,112px)' : ''; $('r-u').textContent = 'uur per jaar, voor je hele team';
   $('cta').href = $('cta2').href = waLink(r, s);
 }
 update();
