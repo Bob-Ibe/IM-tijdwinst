@@ -45,6 +45,14 @@ body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 Manrope
 .foot { text-align:center; margin-top:26px; }
 .foot .fine { margin-top:14px; }
 .hero .hero-n { font:700 clamp(44px,7.5vw,66px)/.9 Sora, sans-serif; letter-spacing:-.04em; } /* gewoon cijfer, voor duidelijkheid */
+.trust { margin-top:40px; padding-top:28px; border-top:1px solid var(--line); display:grid; grid-template-columns:1fr; gap:10px; }
+.trust-i { display:flex; align-items:center; gap:12px; padding:14px 16px; background:var(--paper); border:1px solid var(--line); border-radius:14px; color:inherit; text-decoration:none; text-align:left; }
+.trust-i svg { width:26px; height:26px; flex:none; fill:none; stroke:var(--accent); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.trust-i b { display:block; font:700 14px/1.3 Sora, sans-serif; }
+.trust-i span { font-size:12.5px; color:var(--text-2); }
+.trust-i .stars { flex:none; color:#f2b01e; font-size:17px; letter-spacing:1px; }
+a.trust-i:hover { border-color:var(--accent); }
+a.trust-i:hover span:last-child { color:var(--accent); }
 .contact { margin-top:56px; padding-top:32px; border-top:1px solid var(--line); text-align:center; }
 .contact .lbl { display:block; margin-bottom:6px; }
 .contact h2 { font:700 22px/1.3 Sora; margin:0 auto 6px; max-width:380px; }
@@ -103,7 +111,7 @@ body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 Manrope
   </div>
   <div class="foot">
     <a class="cta" id="cta" target="_blank" rel="noopener">Plan een kennismaking</a>
-    <p class="fine">Indicatie op basis van 46 werkweken, excl. btw.<br>Halen we niet minimaal 5 uur per week, dan krijg je je aanbetaling terug.<br><br>Je concurrentievoordeel = 5 tot 15 uur per week extra + verhoogde output</p>
+    <p class="fine">Indicatie op basis van 46 werkweken, excl. btw.<br>Halen we niet minimaal 10 uur per week, dan krijg je je aanbetaling terug.<br><br>Je concurrentievoordeel = 5 tot 15 uur per week extra + verhoogde output</p>
   </div>
   <section class="contact">
     <span class="lbl">Contact</span>
@@ -112,6 +120,10 @@ body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 Manrope
     <p class="only-touch">Tik op de knop en je zit direct in mijn WhatsApp.</p>
     <a class="cta only-touch" id="cta2" target="_blank" rel="noopener">Stuur me een appje</a>
     <div class="qr-tree"><canvas aria-label="QR-code naar WhatsApp"></canvas><p class="qr-hint">Klik op de boom · <b>scan voor direct WhatsApp-contact met Bob</b></p></div>
+  </section>
+  <section class="trust">
+    <div class="trust-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><div><b>Garantie op 10 uur tijdbesparing</b><span>Halen we het niet, dan krijg je je aanbetaling terug</span></div></div>
+    <a class="trust-i" href="https://www.google.com/search?sca_esv=f6888a27e4d63945&amp;hl=nl&amp;authuser=0&amp;sxsrf=AKL5yDgAON5EjWc7N-q-ukMLY8J-m65ytw:1794335859766&amp;q=IBE+MOTION&amp;si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c2FQrJeHP3dRJp3IfrscedlYPdQMiAQno4ZsRONNXr2UJUQjvdkbwW9Rp_QWagCSJf2OBCg%3D&amp;uds=AE2AFgZMw9nw52AJx8A20Rdliol5-sOLUR9VRsvJgqAsLXrdOFaHNekOWut9nPBp7Wmz81KH4mnm_f1luFmCy05tvQGFVziDEKKQr1kyf7v1X6i82AStqw8&amp;sa=X&amp;ved=2ahUKEwjEt538hf6XAxXw4wIHHfBoGZMQ3PALegQIFRAE&amp;biw=1440&amp;bih=812&amp;dpr=2" target="_blank" rel="noopener"><span class="stars" aria-label="5 sterren">★★★★★</span><div><b>5 sterren op Google</b><span>Lees de reviews</span></div></a>
   </section>
 </div>
 <script>
